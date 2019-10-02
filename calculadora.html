@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <p>Insira o primeiro número: <input type="number" id="a"/></p>
+        <p>Insira o segundo número: <input type = "number" id= "b" /></p>
+        <button onclick="somar()">Somar (+)</button><button onclick="subtrair()">Subtrair (-)</button><button onclick="multiplicar()">Multiplicar (*)</button><button onclick="dividir()">Divisão (/)</button>
+        <p>Resultado: <input type = "number" id = "resultado"/></p>
+
+        <script>
+            function somar (a, b){
+                var a = + document.getElementById('a').value;
+                var b = + document.getElementById('b').value;
+                var resultado = document.getElementById('resultado');
+                alert(a + b);
+                document.getElementById('resultado').value = a + b
+            }
+            function subtrair (a, b){
+                var a = + document.getElementById('a').value;
+                var b = + document.getElementById('b').value;
+                var resultado = document.getElementById('resultado');
+                alert(a - b);
+                document.getElementById('resultado').value = a - b
+            }
+            function multiplicar (a, b){
+                var a = + document.getElementById('a').value;
+                var b = + document.getElementById('b').value;
+                var resultado = document.getElementById('resultado');
+                alert(a * b);
+                document.getElementById('resultado').value = a * b
+            }
+            function dividir (a, b){
+                var a = + document.getElementById('a').value;
+                var b = + document.getElementById('b').value;
+                var resultado = document.getElementById('resultado');
+                alert(a / b);
+                document.getElementById('resultado').value = a / b
+            }
+        </script>
+    </body>
+</html>
